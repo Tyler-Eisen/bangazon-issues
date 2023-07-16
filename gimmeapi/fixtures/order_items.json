@@ -1,0 +1,272 @@
+[
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 1,
+      "fields": {
+          "order_id": 1,
+          "product_id": 1,
+          "quantity": 2
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 2,
+      "fields": {
+          "order_id": 1,
+          "product_id": 2,
+          "quantity": 1
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 3,
+      "fields": {
+          "order_id": 1,
+          "product_id": 3,
+          "quantity": 1
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 4,
+      "fields": {
+          "order_id": 2,
+          "product_id": 1,
+          "quantity": 3
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 5,
+      "fields": {
+          "order_id": 2,
+          "product_id": 2,
+          "quantity": 1
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 6,
+      "fields": {
+          "order_id": 2,
+          "product_id": 3,
+          "quantity": 2
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 7,
+      "fields": {
+          "order_id": 3,
+          "product_id": 1,
+          "quantity": 2
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 8,
+      "fields": {
+          "order_id": 3,
+          "product_id": 2,
+          "quantity": 1
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 9,
+      "fields": {
+          "order_id": 3,
+          "product_id": 3,
+          "quantity": 1
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 10,
+      "fields": {
+          "order_id": 4,
+          "product_id": 1,
+          "quantity": 3
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 11,
+      "fields": {
+          "order_id": 4,
+          "product_id": 2,
+          "quantity": 1
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 12,
+      "fields": {
+          "order_id": 4,
+          "product_id": 3,
+          "quantity": 2
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 13,
+      "fields": {
+          "order_id": 5,
+          "product_id": 1,
+          "quantity": 2
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 14,
+      "fields": {
+          "order_id": 5,
+          "product_id": 2,
+          "quantity": 1
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 15,
+      "fields": {
+          "order_id": 5,
+          "product_id": 3,
+          "quantity": 1
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 16,
+      "fields": {
+          "order_id": 6,
+          "product_id": 1,
+          "quantity": 3
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 17,
+      "fields": {
+          "order_id": 6,
+          "product_id": 2,
+          "quantity": 1
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 18,
+      "fields": {
+          "order_id": 6,
+          "product_id": 3,
+          "quantity": 2
+      }
+  },
+  {
+      "model": "gimmeapi.orderitem",
+      "pk": 19,
+      "fields": {
+          "order_id": 7,
+          "product_id": 1,
+          "quantity": 2
+      }
+  },
+  {
+    "model": "gimmeapi.orderitem",
+    "pk": 20,
+    "fields": {
+        "order_id": 7,
+        "product_id": 2,
+        "quantity": 1
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 21,
+    "fields": {
+        "order_id": 7,
+        "product_id": 3,
+        "quantity": 1
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 22,
+    "fields": {
+        "order_id": 8,
+        "product_id": 1,
+        "quantity": 3
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 23,
+    "fields": {
+        "order_id": 8,
+        "product_id": 2,
+        "quantity": 1
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 24,
+    "fields": {
+        "order_id": 8,
+        "product_id": 3,
+        "quantity": 2
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 25,
+    "fields": {
+        "order_id": 9,
+        "product_id": 1,
+        "quantity": 2
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 26,
+    "fields": {
+        "order_id": 9,
+        "product_id": 2,
+        "quantity": 1
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 27,
+    "fields": {
+        "order_id": 9,
+        "product_id": 3,
+        "quantity": 1
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 28,
+    "fields": {
+        "order_id": 10,
+        "product_id": 1,
+        "quantity": 3
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 29,
+    "fields": {
+        "order_id": 10,
+        "product_id": 2,
+        "quantity": 1
+    }
+},
+{
+    "model": "gimmeapi.orderitem",
+    "pk": 30,
+    "fields": {
+        "order_id": 10,
+        "product_id": 3,
+        "quantity": 2
+    }
+}
+]

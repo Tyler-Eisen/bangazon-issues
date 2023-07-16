@@ -1,0 +1,112 @@
+[
+  {
+      "model": "gimmeapi.order",
+      "pk": 1,
+      "fields": {
+          "buyer_id": 1,
+          "date": "2023-07-01",
+          "shipped": false,
+          "payment_type": "Credit Card",
+          "total": 100
+      }
+  },
+  {
+      "model": "gimmeapi.order",
+      "pk": 2,
+      "fields": {
+          "buyer_id": 1,
+          "date": "2023-07-02",
+          "shipped": false,
+          "payment_type": "Credit Card",
+          "total": 150
+      }
+  },
+  {
+      "model": "gimmeapi.order",
+      "pk": 3,
+      "fields": {
+          "buyer_id": 2,
+          "date": "2023-07-03",
+          "shipped": true,
+          "payment_type": "Debit Card",
+          "total": 90
+      }
+  },
+  {
+      "model": "gimmeapi.order",
+      "pk": 4,
+      "fields": {
+          "buyer_id": 1,
+          "date": "2023-07-04",
+          "shipped": false,
+          "payment_type": "Debit Card",
+          "total": 200
+      }
+  },
+  {
+      "model": "gimmeapi.order",
+      "pk": 5,
+      "fields": {
+          "buyer_id": 2,
+          "date": "2023-07-05",
+          "shipped": true,
+          "payment_type": "PayPal",
+          "total": 60
+      }
+  },
+  {
+      "model": "gimmeapi.order",
+      "pk": 6,
+      "fields": {
+          "buyer_id": 2,
+          "date": "2023-07-06",
+          "shipped": false,
+          "payment_type": "Credit Card",
+          "total": 180
+      }
+  },
+  {
+      "model": "gimmeapi.order",
+      "pk": 7,
+      "fields": {
+          "buyer_id": 1,
+          "date": "2023-07-07",
+          "shipped": true,
+          "payment_type": "Debit Card",
+          "total": 300
+      }
+  },
+  {
+      "model": "gimmeapi.order",
+      "pk": 8,
+      "fields": {
+          "buyer_id": 2,
+          "date": "2023-07-08",
+          "shipped": false,
+          "payment_type": "PayPal",
+          "total": 120
+      }
+  },
+  {
+      "model": "gimmeapi.order",
+      "pk": 9,
+      "fields": {
+          "buyer_id": 1,
+          "date": "2023-07-09",
+          "shipped": true,
+          "payment_type": "Credit Card",
+          "total": 400
+      }
+  },
+  {
+      "model": "gimmeapi.order",
+      "pk": 10,
+      "fields": {
+          "buyer_id": 1,
+          "date": "2023-07-10",
+          "shipped": false,
+          "payment_type": "Debit Card",
+          "total": 140
+      }
+  }
+]

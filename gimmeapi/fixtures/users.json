@@ -1,0 +1,24 @@
+[
+  {
+      "model": "gimmeapi.user",
+      "pk": 1,
+      "fields": {
+          "uid": "UID001",
+          "name": "Alice",
+          "email": "alice@example.com",
+          "address": "123 Main St, Anytown, Anystate",
+          "phone": "1234567890"
+      }
+  },
+  {
+      "model": "gimmeapi.user",
+      "pk": 2,
+      "fields": {
+          "uid": "UID002",
+          "name": "Bob",
+          "email": "bob@example.com",
+          "address": "456 Oak Ave, Othertown, Otherstate",
+          "phone": "0987654321"
+      }
+  }
+]
