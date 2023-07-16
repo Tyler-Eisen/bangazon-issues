@@ -1,0 +1,242 @@
+[
+  {
+      "model": "gimmeapi.product",
+      "pk": 1,
+      "fields": {
+          "name": "Milk",
+          "price": "2.99",
+          "description": "Fresh whole milk",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [1]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 2,
+      "fields": {
+          "name": "Chicken Breast",
+          "price": "9.99",
+          "description": "Organic chicken breast",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [2]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 3,
+      "fields": {
+          "name": "Veggie Burger",
+          "price": "6.99",
+          "description": "Plant-based burger patties",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [3, 6]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 4,
+      "fields": {
+          "name": "Tofu",
+          "price": "3.50",
+          "description": "Organic firm tofu",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [3, 4]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 5,
+      "fields": {
+          "name": "Fresh Salad Mix",
+          "price": "4.50",
+          "description": "Pre-washed salad mix",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [4]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 6,
+      "fields": {
+          "name": "Whole Wheat Bread",
+          "price": "3.00",
+          "description": "Fresh baked whole wheat bread",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [5]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 7,
+      "fields": {
+          "name": "Frozen Pizza",
+          "price": "7.00",
+          "description": "Cheese frozen pizza",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [6]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 8,
+      "fields": {
+          "name": "Apple Juice",
+          "price": "3.50",
+          "description": "Natural apple juice",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [7]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 9,
+      "fields": {
+          "name": "Chips",
+          "price": "2.50",
+          "description": "Potato chips",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [8]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 10,
+      "fields": {
+          "name": "Canned Beans",
+          "price": "1.50",
+          "description": "Black beans",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [9]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 11,
+      "fields": {
+          "name": "Shampoo",
+          "price": "5.50",
+          "description": "Sulfate-free shampoo",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [10]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 12,
+      "fields": {
+          "name": "Yogurt",
+          "price": "4.99",
+          "description": "Greek yogurt",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [1]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 13,
+      "fields": {
+          "name": "Steak",
+          "price": "14.99",
+          "description": "Ribeye steak",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [2]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 14,
+      "fields": {
+          "name": "Vegan Cheese",
+          "price": "5.99",
+          "description": "Plant-based cheese",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [3, 6]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 15,
+      "fields": {
+          "name": "Tomatoes",
+          "price": "2.99",
+          "description": "Fresh tomatoes",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [4]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 16,
+      "fields": {
+          "name": "Croissants",
+          "price": "4.50",
+          "description": "Freshly baked croissants",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [5]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 17,
+      "fields": {
+          "name": "Ice Cream",
+          "price": "5.00",
+          "description": "Vanilla ice cream",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [6]
+      }
+  },
+  {
+      "model": "gimmeapi.product",
+      "pk": 18,
+      "fields": {
+          "name": "Soda",
+          "price": "2.50",
+          "description": "Cola soda",
+          "stock": "In stock",
+          "seller_id": 1,
+          "category_id": [7]
+      }
+  },
+  {
+    "model": "gimmeapi.product",
+    "pk": 19,
+    "fields": {
+        "name": "Chocolate",
+        "price": "2.50",
+        "description": "Milk chocolate",
+        "stock": "In stock",
+        "seller_id": 1,
+        "category_id": [8]
+    }
+},
+{
+    "model": "gimmeapi.product",
+    "pk": 20,
+    "fields": {
+        "name": "Canned Soup",
+        "price": "3.00",
+        "description": "Cream of mushroom soup",
+        "stock": "In stock",
+        "seller_id": 1,
+        "category_id": [9]
+    }
+}
+]

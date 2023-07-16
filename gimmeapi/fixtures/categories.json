@@ -1,0 +1,72 @@
+[
+  {
+      "model": "gimmeapi.category",
+      "pk": 1,
+      "fields": {
+          "name": "Dairy"
+      }
+  },
+  {
+      "model": "gimmeapi.category",
+      "pk": 2,
+      "fields": {
+          "name": "Meat"
+      }
+  },
+  {
+      "model": "gimmeapi.category",
+      "pk": 3,
+      "fields": {
+          "name": "Vegan"
+      }
+  },
+  {
+      "model": "gimmeapi.category",
+      "pk": 4,
+      "fields": {
+          "name": "Produce"
+      }
+  },
+  {
+      "model": "gimmeapi.category",
+      "pk": 5,
+      "fields": {
+          "name": "Bakery"
+      }
+  },
+  {
+      "model": "gimmeapi.category",
+      "pk": 6,
+      "fields": {
+          "name": "Frozen"
+      }
+  },
+  {
+      "model": "gimmeapi.category",
+      "pk": 7,
+      "fields": {
+          "name": "Beverages"
+      }
+  },
+  {
+      "model": "gimmeapi.category",
+      "pk": 8,
+      "fields": {
+          "name": "Snacks"
+      }
+  },
+  {
+      "model": "gimmeapi.category",
+      "pk": 9,
+      "fields": {
+          "name": "Canned Goods"
+      }
+  },
+  {
+      "model": "gimmeapi.category",
+      "pk": 10,
+      "fields": {
+          "name": "Health & Beauty"
+      }
+  }
+]
