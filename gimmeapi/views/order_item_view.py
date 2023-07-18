@@ -2,7 +2,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from gimmeapi.models import OrderItem
+from gimmeapi.models import OrderItem, Product, Order
 from gimmeapi.serializers import OrderItemSerializer
 
 class OrderItemView(ViewSet):
@@ -46,10 +46,16 @@ class OrderItemView(ViewSet):
     def update(self, request, pk=None):
         """PUT request to update an OrderItem"""
         order_item = OrderItem.objects.get(pk=pk)
-        order_item.product_id = request.data["product_id"]
-        order_item.order_id = request.data["order_id"]
-        order_item.quantity = request.data["quantity"]
         
+        product = Product.objects.get(pk=request.data["product_id"])
+        # Now you can assign the product instance to order_item.product_id
+        order_item.product_id = product
+        
+        order = Order.objects.get(pk=request.data["order_id"])
+    # Assign the order instance to order_item.order, not order_item.order_id
+        order_item.order = order
+        order_item.quantity = request.data["quantity"]
+            
         order_item.save()
 
         serializer = OrderItemSerializer(order_item, context={'request': request})
@@ -64,4 +70,5 @@ class OrderItemView(ViewSet):
             return Response({}, status=status.HTTP_204_NO_CONTENT)
 
         except OrderItem.DoesNotExist as ex:
-            return Response({'message': str(ex)}, status=status.HTTP_404_NOT_FOUND)
+            return Response({'message': "Order Item Destroyed"}, status=status.HTTP_404_NOT_FOUND)
+    
