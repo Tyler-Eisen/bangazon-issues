@@ -18,43 +18,56 @@ class ProductView(ViewSet):
         products = Product.objects.all()
         category = request.query_params.get('category', None)
         if category is not None:
-            products = products.filter(category_id=category)
+            products = products.filter(category=category)
         
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data)
     
     def create(self, request):
-      """POST request to create a Product"""
-      category_id = request.data["category_id"]
-      seller_id = request.data["seller_id"]
-      name = request.data["name"]
-      price = request.data["price"]
-      description = request.data["description"]
-      stock = request.data["stock"]
-      image_url = request.data["image_url"]
+        seller = User.objects.get(pk=request.data["seller"])
+        categories = Category.objects.filter(id__in=request.data.get("categories", []))
 
-      try:
-          category = Category.objects.get(id=category_id)
-      except Category.DoesNotExist:
-          return Response({"error": "Category with this ID does not exist."}, status=status.HTTP_400_BAD_REQUEST)
+        product = Product(
+            seller=seller,
+            name=request.data["name"],
+            description=request.data["description"],
+            stock=request.data["stock"],
+            image_url=request.data["image_url"]
+        )
+        product.save()
+        product.category.set(categories)
 
-      try:
-          seller = User.objects.get(id=seller_id)
-      except User.DoesNotExist:
-          return Response({"error": "Seller with this ID does not exist."}, status=status.HTTP_400_BAD_REQUEST)
+        serializer = ProductSerializer(product)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    
+    def update(self, request, pk):
+        """Handle PUT requests for a product
+            
+        Returns:
+            Response -- JSON serialized updated Product instance
+        """
+        product = Product.objects.filter(pk=pk).first()
+        product.name = request.data.get("name", product.name)
+        product.price = request.data.get("price", product.price)
+        product.description = request.data.get("description", product.description)
+        product.stock = request.data.get("stock", product.stock)
+        product.image_url = request.data.get("image_url", product.image_url)
 
-      data = {
-          'category_id': category.id,
-          'seller_id': seller.id,
-          'name': name,
-          'price': price,
-          'description': description,
-          'stock': stock,
-          'image_url': image_url
-      }
+        seller_id = request.data.get("seller", product.seller_id)
+        seller = User.objects.get(pk=seller_id)
+        product.seller = seller
 
-      serializer = ProductSerializer(data=data)
-      if serializer.is_valid(raise_exception=True):
-          serializer.save()
-          return Response(serializer.data, status=status.HTTP_201_CREATED)
-      return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        # Update the many-to-many relationship with categories
+        category_ids = request.data.get("category", [])
+        categories = Category.objects.filter(id__in=category_ids)
+        product.category.set(categories)
+
+        product.save()
+
+        serializer = ProductSerializer(product)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    def destroy(self, request, pk):
+        product = Product.objects.get(pk=pk)
+        product.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
