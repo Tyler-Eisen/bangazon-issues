@@ -6,7 +6,7 @@ from gimmeapi.models import Product, User, Category
 from gimmeapi.serializers import ProductSerializer
 
 class ProductView(ViewSet):
-  
+    
     def retrieve(self, request, pk=None):
       
         product = Product.objects.get(pk=pk)
@@ -14,14 +14,14 @@ class ProductView(ViewSet):
         return Response(serializer.data)
     
     def list(self, request):
-         
         products = Product.objects.all()
-        category = request.query_params.get('category', None)
-        if category is not None:
-            products = products.filter(category=category)
-        
+        uid = request.query_params.get('seller', None)
+        if uid is not None:
+            products = products.filter(seller__uid=uid)
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data)
+
+
     
     def create(self, request):
         seller = User.objects.get(pk=request.data["seller"])
