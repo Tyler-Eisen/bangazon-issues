@@ -43,7 +43,7 @@ def register_user(request):
       email = request.data['email'],
       address = request.data['address'],
       phone = request.data['phone'],
-      image_url = request.data['imageUrl'],
+      image_url = request.data['image_url'],
     )
 
 # Return the user info to the client
