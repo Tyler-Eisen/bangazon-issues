@@ -15,9 +15,11 @@ class ProductView(ViewSet):
     
     def list(self, request):
         products = Product.objects.all()
-        uid = request.query_params.get('seller', None)
-        if uid is not None:
-            products = products.filter(seller__uid=uid)
+        id = request.query_params.get('seller', None)
+        print('products for id:', id)
+        if id is not None:
+            products = products.filter(seller_id=id)
+            print(f'found {len(products)} product(s)')
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data)
 

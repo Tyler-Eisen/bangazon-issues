@@ -42,6 +42,11 @@ class UserView(ViewSet):
         phone =  request.data.get("phone", user.phone)
         image_url =  request.data.get("imageUrl", user.image_url)
         user.uid = uid
+        user.name = name
+        user.email = email
+        user.address = address
+        user.phone = phone
+        user.image_url = image_url
         user.save()
         return Response({'message': 'User Updated'}, status=status.HTTP_204_NO_CONTENT)
 
